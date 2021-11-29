@@ -60,6 +60,9 @@ def exercise31(*args):
     return round(mean,2)
 
 def exercise32(**kwargs):
+    if len(kwargs) == 0:
+        return "N/C"
+
     mean=0
     tmp=[]
     for key, value in kwargs.items():
